@@ -166,7 +166,7 @@ mod generic_client;
 mod maybe_tls_stream;
 mod portal;
 mod prepare;
-mod query;
+pub mod query;
 pub mod row;
 mod simple_query;
 #[cfg(feature = "runtime")]
