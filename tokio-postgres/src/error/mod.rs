@@ -457,7 +457,7 @@ impl Error {
         Error::new(Kind::Parse, Some(Box::new(e)))
     }
 
-    pub(crate) fn encode(e: io::Error) -> Error {
+    pub fn encode(e: io::Error) -> Error {
         Error::new(Kind::Encode, Some(Box::new(e)))
     }
 
