@@ -150,7 +150,7 @@ mod cancel_query;
 mod cancel_query_raw;
 mod cancel_token;
 mod client;
-mod codec;
+pub mod codec;
 pub mod config;
 #[cfg(feature = "runtime")]
 mod connect;
