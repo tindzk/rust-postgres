@@ -35,7 +35,7 @@ impl Drop for StatementInner {
 pub struct Statement(Arc<StatementInner>);
 
 impl Statement {
-    pub(crate) fn new(
+    pub fn new(
         inner: &Arc<InnerClient>,
         name: String,
         params: Vec<Type>,
